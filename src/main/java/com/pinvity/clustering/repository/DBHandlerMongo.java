@@ -36,9 +36,9 @@ public class DBHandlerMongo {
 
 
     private DBHandlerMongo() {
-        MongoClientURI uri  = new MongoClientURI("mongodb://user:password@127.0.0.1:27017/pinvity");
+        MongoClientURI uri  = new MongoClientURI("mongodb://mongouser:someothersecret@138.197.171.240:27017/pinvity");
         mongoClient         = new MongoClient(uri);
-        pinvity             = mongoClient.getDatabase("locations");
+        pinvity             = mongoClient.getDatabase("pinvity");
     }
 
 

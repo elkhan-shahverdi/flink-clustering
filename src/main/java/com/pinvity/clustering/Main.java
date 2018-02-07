@@ -20,7 +20,7 @@ public class Main {
     private final static int initialCluster = 8;
 
     public static void main(String[] args){
-        List<Point> points = DBHandlerMongo.getInstance().getActivities(500000);
+        List<Point> points = DBHandlerMongo.getInstance().getActivities(0);
         int k = determineK(1,points.size());
 
 
